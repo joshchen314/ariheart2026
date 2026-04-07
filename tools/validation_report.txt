@@ -1,0 +1,6 @@
+=== Hugo Front Matter Validation Report ===
+
+OK: 48 個檔案
+問題: 0 個檔案
+
+所有檔案通過驗證！

@@ -1,0 +1,5 @@
+lxml
+markdownify
+requests
+pyyaml
+pillow

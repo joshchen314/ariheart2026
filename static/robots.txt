@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joshchen314.github.io/ariheart2026/sitemap.xml

@@ -1,0 +1,93 @@
+=== WordPress XML Audit Report ===
+
+文章 (post) 總數: 57
+  - 已發布: 46
+  - 草稿/其他: 11
+頁面 (page) 總數: 1
+附件 (attachment) 總數: 13
+圖片檔案數量: 13
+
+=== 標籤 (Tags) ===
+  IELTS: 1 篇
+  Writing: 1 篇
+  GRE: 1 篇
+  MAGOOSH: 1 篇
+  MATH: 1 篇
+  迴歸係數: 1 篇
+  ODS TRACE: 1 篇
+  參數估計值: 1 篇
+
+=== 分類 (Categories) ===
+  SAS: 25 篇
+  Uncategorized: 21 篇
+  SAS 101: 8 篇
+  Econometrics!!!: 6 篇
+  R: 5 篇
+  統計地圖: 5 篇
+  R-Beauty: 4 篇
+  這是抄的！: 2 篇
+  SAS-Beauty: 2 篇
+  獨立研究: 1 篇
+
+=== 已發布文章列表 ===
+  [2013-10-29] libname 與 data (slug: libname-%e8%88%87-data)
+  [2013-10-29] SAS Enterprise Miner (SAS EM) 開始最重要的四步驟 (slug: sas-enterprise-miner-sas-em-%e9%96%8b%e5%a7%8b%e6%9c%80%e9%87%8d%e8%a6%81%e7%9a%84%e5%9b%9b%e6%ad%a5%e9%a9%9f)
+  [2013-10-29] ttest小試身手 (slug: ttest%e5%b0%8f%e8%a9%a6%e8%ba%ab%e6%89%8b)
+  [2013-10-30] transpose (slug: transpose)
+  [2013-10-31] Simulation (slug: simulation)
+  [2013-10-31] the Law of Large Number and the Central Limit Theorem (slug: the-law-of-large-number-and-the-central-limit-theorem)
+  [2013-11-01] 不要小看 " proc means " (slug: %e4%b8%8d%e8%a6%81%e5%b0%8f%e7%9c%8b-proc-means)
+  [2013-11-01] the Law of Large Number (slug: the-law-of-large-number)
+  [2013-11-01] array made easy? hope so. (slug: array-made-easy-hope-so)
+  [2013-11-01] the Central Limit Theorem (slug: the-central-limit-theorem)
+  [2013-11-05] [模擬] LLN 與 CTL (slug: %e6%a8%a1%e6%93%ac-lln-%e8%88%87-ctl)
+  [2013-11-05] Covariance matrix (slug: covariance-matrix)
+  [2013-11-05] Heteroscedasticity &amp; the White's test  (slug: heteroscedasticity-the-whites-test)
+  [2013-11-05] 傳說中的 GIS (slug: %e5%82%b3%e8%aa%aa%e4%b8%ad%e7%9a%84-gis)
+  [2013-11-05] 如何用 SAS 來檢查假設和共線性 (slug: %e5%a6%82%e4%bd%95%e7%94%a8-sas-%e4%be%86%e6%aa%a2%e6%9f%a5%e5%81%87%e8%a8%ad%e5%92%8c%e5%85%b1%e7%b7%9a%e6%80%a7)
+  [2013-11-08] Hessian matrix (slug: hessian-matrix)
+  [2013-11-08] Jacobian matrix (slug: 170)
+  [2013-11-08] Eigenvalues and eigenvectors (slug: eigenvalues-and-eigenvectors)
+  [2013-11-11] the Creating of Dummy Variables (slug: the-creating-of-dummy-variables)
+  [2013-11-12] R help (slug: r-help)
+  [2013-11-13] Endnote is AWESOME!!!!! (slug: endnote-is-awesome)
+  [2014-03-07] SAS: Dummy Variable 再應用 (slug: sas-dummy-variable-%e5%86%8d%e6%87%89%e7%94%a8)
+  [2014-04-25] SAS 101 Day 1 SAS是吃貨嗎 -- 買菜放進冰箱 (slug: sas-101%ef%bc%9a-day-1-input)
+  [2014-04-25] SAS 101 Day 2 Data階段：洗菜 (slug: sas-101-day-2-%e9%81%8b%e7%ae%97)
+  [2014-04-25] SAS 101 Day 3 Proc階段：烹調 (slug: sas-101-day-3-%e7%83%b9%e8%aa%bf)
+  [2014-04-25] SAS 101 Day 4 資料輸出與ODS (slug: sas-101-day-4-%e8%b3%87%e6%96%99%e8%bc%b8%e5%87%ba%e8%88%87ods)
+  [2014-04-25] SAS 101 Day 5 資料集合併與分割 (slug: sas-101-day-5-%e8%b3%87%e6%96%99%e9%9b%86%e5%90%88%e4%bd%b5%e8%88%87%e5%88%86%e5%89%b2)
+  [2014-04-25] SAS 101 Day 6 巨集 (slug: sas-101-day-6-%e5%b7%a8%e9%9b%86)
+  [2014-08-07] 以巨集變數(Macro)處理普查問卷，討論一個例子 (slug: %e4%bb%a5%e5%b7%a8%e9%9b%86%e8%ae%8a%e6%95%b8macro%e8%99%95%e7%90%86%e6%99%ae%e6%9f%a5%e5%95%8f%e5%8d%b7%ef%bc%8c%e8%a8%8e%e8%ab%96%e4%b8%80%e5%80%8b%e4%be%8b%e5%ad%90)
+  [2014-08-08] SAS 使用 SQL 語言 (slug: sas-%e4%bd%bf%e7%94%a8-sql-%e8%aa%9e%e8%a8%80)
+  [2014-12-01] R：import data (slug: r%ef%bc%9aimport-data)
+  [2015-02-04] MARKDOWN - 寫下來 (slug: markdown-%e5%af%ab%e4%b8%8b%e4%be%86)
+  [2015-02-09] Python 常用的容器型態 (slug: python-%e5%b8%b8%e7%94%a8%e7%9a%84%e5%ae%b9%e5%99%a8%e5%9e%8b%e6%85%8b)
+  [2015-02-09] Python: INTRO (slug: python-intro)
+  [2015-02-14] SAS SQL：多一些說明 (slug: sas-sql%ef%bc%9a%e5%a4%9a%e4%b8%80%e4%ba%9b%e8%aa%aa%e6%98%8e)
+  [2015-04-15] SAS計量模型工具的檢定結果匯出 (slug: sas%e8%a8%88%e9%87%8f%e6%a8%a1%e5%9e%8b%e5%b7%a5%e5%85%b7%e7%9a%84%e6%aa%a2%e5%ae%9a%e7%b5%90%e6%9e%9c%e5%8c%af%e5%87%ba)
+  [2015-07-16] 三位聯準會主席與2008年金融風暴 (slug: %e4%b8%89%e4%bd%8d%e8%81%af%e6%ba%96%e6%9c%83%e4%b8%bb%e5%b8%ad%e8%88%872008%e5%b9%b4%e9%87%91%e8%9e%8d%e9%a2%a8%e6%9a%b4)
+  [2015-10-10] 給被Windows慣壞者的版本控制筆記 (slug: %e7%b5%a6%e8%a2%abwindows%e6%85%a3%e5%a3%9e%e8%80%85%e7%9a%84%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6%e7%ad%86%e8%a8%98)
+  [2017-04-05] IIS + php + MariaDB + WordPress (slug: iis-php-mariadb-wordpress)
+  [2017-05-09] 深入淺出繪製統計地圖 1 - 圖資檔處理 (slug: %e6%b7%b1%e5%85%a5%e6%b7%ba%e5%87%ba%e7%b9%aa%e8%a3%bd%e7%b5%b1%e8%a8%88%e5%9c%b0%e5%9c%96-1)
+  [2017-05-09] 深入淺出繪製統計地圖 2 - SAS (slug: %e6%b7%b1%e5%85%a5%e6%b7%ba%e5%87%ba%e7%b9%aa%e8%a3%bd%e7%b5%b1%e8%a8%88%e5%9c%b0%e5%9c%96-2-sas)
+  [2017-05-10] 深入淺出繪製統計地圖 3 - SAS 巨集方法 (slug: %e6%b7%b1%e5%85%a5%e6%b7%ba%e5%87%ba%e7%b9%aa%e8%a3%bd%e7%b5%b1%e8%a8%88%e5%9c%b0%e5%9c%96-3-sas-%e5%b7%a8%e9%9b%86%e6%96%b9%e6%b3%95)
+  [2017-05-10] 深入淺出繪製統計地圖 4 – R (slug: %e6%b7%b1%e5%85%a5%e6%b7%ba%e5%87%ba%e7%b9%aa%e8%a3%bd%e7%b5%b1%e8%a8%88%e5%9c%b0%e5%9c%96-4-r)
+  [2017-07-18] 深入淺出繪製統計地圖 5 – SAS、SVG、Visio (slug: %e6%b7%b1%e5%85%a5%e6%b7%ba%e5%87%ba%e7%b9%aa%e8%a3%bd%e7%b5%b1%e8%a8%88%e5%9c%b0%e5%9c%96-5-sas%e3%80%81svg%e3%80%81visio)
+  [2018-07-17] ODS、EXCEL與文字格式：FIRST 與 CALL DEFINE (slug: ods%e3%80%81excel%e8%88%87%e6%96%87%e5%ad%97%e6%a0%bc%e5%bc%8f%ef%bc%9afirst-%e8%88%87-call-define)
+  [2019-08-10] 回歸模型假設的檢定 (slug: %e5%9b%9e%e6%ad%b8%e6%a8%a1%e5%9e%8b%e5%81%87%e8%a8%ad%e7%9a%84%e6%aa%a2%e5%ae%9a)
+
+=== 圖片 URL 清單 ===
+  https://ariheart2011.wordpress.com/wp-content/uploads/2013/10/histogram7.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2013/11/lln_r.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2013/11/clt_r.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/sas-map.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/sas-gmap-2.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/rplot2.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/104agr5.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/104agr4.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/104agr3.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/104agr2.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/104agr1.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/rplot1041.png
+  https://ariheart2011.wordpress.com/wp-content/uploads/2017/05/rplot1042.png

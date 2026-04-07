@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 tools/wp_to_hugo.py --dry-run)",
+      "Bash(python3 tools/wp_to_hugo.py)",
+      "Bash(python3 tools/image_fetch.py)",
+      "Bash(python3 tools/validate.py)",
+      "Bash(hugo new:*)",
+      "Bash(/opt/homebrew/bin/hugo version:*)",
+      "Bash(/opt/homebrew/bin/hugo new:*)",
+      "Bash(git init:*)",
+      "Bash(git submodule:*)",
+      "Bash(kill %1)",
+      "Bash(gh auth:*)",
+      "Bash(/opt/homebrew/bin/gh auth:*)",
+      "Bash(/opt/homebrew/bin/gh repo:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

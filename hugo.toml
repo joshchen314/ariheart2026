@@ -1,0 +1,82 @@
+baseURL = "https://joshchen314.github.io/ariheart2026/"
+title = "Josh's Notebook"
+theme = "PaperMod"
+defaultContentLanguage = "zh-tw"
+hasCJKLanguage = true
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  author = "Josh Chen"
+  description = "SAS、R、Python、統計與資料分析筆記"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableThemeToggle = false
+  ShowFullTextinRSS = false
+
+  [params.homeInfoParams]
+    Title = "Josh's Notebook"
+    Content = "記錄 SAS、R、Python 及統計計量的學習筆記"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/joshchen"
+
+[languages]
+  [languages.zh-tw]
+    languageCode = "zh-TW"
+    languageName = "繁體中文"
+    weight = 1
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "分類"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "標籤"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "portfolio"
+    name = "作品集"
+    url = "/portfolio/"
+    weight = 40
+  [[menu.main]]
+    identifier = "about"
+    name = "關於我"
+    url = "/about/"
+    weight = 50
+  [[menu.main]]
+    identifier = "search"
+    name = "搜尋"
+    url = "/search/"
+    weight = 60
+
+[minify]
+  disableXML = true
+  minifyOutput = true

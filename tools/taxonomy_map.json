@@ -1,0 +1,78 @@
+{
+  "tags": {
+    "IELTS": {
+      "hugo_taxonomy": "tags",
+      "slug": "ielts"
+    },
+    "Writing": {
+      "hugo_taxonomy": "tags",
+      "slug": "writing"
+    },
+    "GRE": {
+      "hugo_taxonomy": "tags",
+      "slug": "gre"
+    },
+    "MAGOOSH": {
+      "hugo_taxonomy": "tags",
+      "slug": "magoosh"
+    },
+    "MATH": {
+      "hugo_taxonomy": "tags",
+      "slug": "math"
+    },
+    "迴歸係數": {
+      "hugo_taxonomy": "tags",
+      "slug": "迴歸係數"
+    },
+    "ODS TRACE": {
+      "hugo_taxonomy": "tags",
+      "slug": "ods-trace"
+    },
+    "參數估計值": {
+      "hugo_taxonomy": "tags",
+      "slug": "參數估計值"
+    }
+  },
+  "categories": {
+    "Uncategorized": {
+      "hugo_taxonomy": "categories",
+      "slug": "uncategorized"
+    },
+    "SAS": {
+      "hugo_taxonomy": "categories",
+      "slug": "sas"
+    },
+    "這是抄的！": {
+      "hugo_taxonomy": "categories",
+      "slug": "這是抄的！"
+    },
+    "SAS-Beauty": {
+      "hugo_taxonomy": "categories",
+      "slug": "sas-beauty"
+    },
+    "R": {
+      "hugo_taxonomy": "categories",
+      "slug": "r"
+    },
+    "R-Beauty": {
+      "hugo_taxonomy": "categories",
+      "slug": "r-beauty"
+    },
+    "Econometrics!!!": {
+      "hugo_taxonomy": "categories",
+      "slug": "econometrics!!!"
+    },
+    "獨立研究": {
+      "hugo_taxonomy": "categories",
+      "slug": "獨立研究"
+    },
+    "SAS 101": {
+      "hugo_taxonomy": "categories",
+      "slug": "sas-101"
+    },
+    "統計地圖": {
+      "hugo_taxonomy": "categories",
+      "slug": "統計地圖"
+    }
+  }
+}
