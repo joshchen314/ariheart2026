@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hsienyeh.me/ariheart2026/sitemap.xml
+Sitemap: https://joshchen314.github.io/ariheart2026/sitemap.xml
