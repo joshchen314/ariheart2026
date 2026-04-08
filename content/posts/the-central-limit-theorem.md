@@ -23,7 +23,7 @@ hist(fn\_CLT(100,5000),xlim=range(-5,5),freq=FALSE, main='T=100',xlab='Sample Me
 hist(fn\_CLT(200,5000),xlim=range(-5,5),freq=FALSE,main='T=200',xlab='Sample Mean')
 hist(fn\_CLT(500,5000),xlim=range(-5,5),freq=FALSE,main='T=500',xlab='Sample Mean')
 ----------------------------------------gorgeous------------------------------------------
-[![CLT_R](/images/2013/clt_r.png)](/images/2013/clt_r.png)
+[![CLT_R](../../images/2013/clt_r.png)](../../images/2013/clt_r.png)
 ------------------------------------[?] a problem [?]-----------------------------------
 50: In x[i] <- rnorm(t) :
 number of items to replace is not a multiple of replacement length

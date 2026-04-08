@@ -30,4 +30,4 @@ xlab='Sample Mean')
 hist(fun\_LLN(500,5000),xlim=range(-1,1),freq=FALSE,main='T=500',
 xlab='Sample Mean')
 ------------------------------------ beautiful ---------------------------------------
-[![LLN_R](/images/2013/lln_r.png)](/images/2013/lln_r.png)
+[![LLN_R](../../images/2013/lln_r.png)](../../images/2013/lln_r.png)

@@ -11,7 +11,7 @@ title: 深入淺出繪製統計地圖 2 - SAS
 
 如同曹植的七步成詩，我們要來「三步畫統計地圖」，這樣才能深入淺出繪製出迷人的統計地圖。這一篇筆記是要說明，如何以 SAS EG 繪製美麗的統計地圖。雖然使用程式碼，但是基本的架構很清晰，就是**先分別匯入圖資檔與統計資料**檔，並確保二者有一個共同鍵值，如COUNTYNAME，然後，**使用SAS的Graph模組，以proc gmap方法進行繪製作業**，就可以獲得美麗的地圖。
 這一篇筆記的運作方式，是將程式碼都呈現出來，可以直接在SAS上執行，必需要修改的部分已經加上藍色標記，比如說匯入圖資檔與統計資料檔的檔案路徑，或是統計資料檔的哪一個變數。下圖是依據104年農林漁牧業普查之農事及畜牧服務業資料繪製的。
-![sas gmap 2](/images/2017/sas-gmap-2.png)
+![sas gmap 2](../../images/2017/sas-gmap-2.png)
 
 **第一步，先匯入shp圖資檔**（已經轉成big5格式），資料包含到縣市的鄉鎮市區級資料，資料檔的欄位名稱為COUNTYNAME, COUNTYID, COUNTYCODE, TOWNNAME, TOWNID, TOWNCODE。再以**PROC** **GREMOVE方法，將鄉鎮市區的界線抹掉，以得到縣市級的階層；這是為了保有彈性，使得我們能夠產製縣市級、鄉鎮市區級的地圖，但是，如使用縣市級、村里級或是非內政部國土測繪中心（2015/12）的圖資檔，就需要修改紫色標記。如果需要幫地圖別上縣市名稱的標籤，可以使用內建的巨集，%*annomac***與**%*maplabel***方法。
 **這個步驟可以得到圖資檔WORK.SORTSortedVILLAGEMAP，以及標籤檔maplabel**。
@@ -87,8 +87,8 @@ ANNOTATE=MAPLABEL;         /**    呼叫標籤檔    **/
 /** --   工作程式碼結尾   -- \*\*/
 結論：
 用SAS來繪製統計地圖，比我想像的容易許多，也想再多研究一些。所以，我發現還能在統計地圖上增加一個統計量，甚至是使用R來繪製統計地圖，我們之後繼續討論。或者，有不盡善盡美的地方，請直接聯絡作者，email: sandalphu@gmail.com 或 josh314@dgbas.gov.tw。
-![SAS map](/images/2017/sas-map.png)
-![Rplot2](/images/2017/rplot2.png)
+![SAS map](../../images/2017/sas-map.png)
+![Rplot2](../../images/2017/rplot2.png)
  
 附錄：COLOR LIST： COLOR=前綴縮寫+顏色縮寫----> VPAP= VPA + P。
 
