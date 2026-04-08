@@ -6,6 +6,7 @@ hasCJKLanguage = true
 [pagination]
   pagerSize = 10
 enableRobotsTXT = true
+canonifyURLs = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
