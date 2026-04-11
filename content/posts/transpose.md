@@ -8,7 +8,7 @@ tags: []
 title: transpose
 ---
 
-proc transpose data=a out=d ;
-by name; /\*藉由"name"轉置\*/
-var item1-item4; /\*轉置的變項\*/
+proc transpose data=a out=d ;\
+by name; /\*藉由"name"轉置\*/\
+var item1-item4; /\*轉置的變項\*/\
 run;

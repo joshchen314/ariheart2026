@@ -38,11 +38,11 @@ title: SAS 101 Day 5 資料集合併與分割
 | **DATA** boats3; INFILE 'c:\MyRawData\Boats3.csv' DLM =',' DSD MISSOVER; INPUT Name :$13. **rate**; RUN; |
 | **proc****sort**data=bt2;  by name; **proc****sort**data=boats3;  by name; **DATA** BT3; **MERGE** BT2(IN=A)  boats3(IN=B); BY Name; IF A; run; |
 
- 
 第一步驟要先確定多個資料集按照某個行變量（這裡是：”Name”）排順序，所以用 ” **proc****sort** ”。第二步驟才是合併，用 “ MERGE ” 。然後，每一筆資料就會新增行變量，這裡是 rate 。
-這裡需要說明的是 "IF" 的用法：
-IF A          保留完整A集合
-IF A & B  匯出A集合與B集合的交集
+
+這裡需要說明的是 "IF" 的用法：\
+IF A          保留完整A集合\
+IF A & B  匯出A集合與B集合的交集\
 IF A | B   匯出A集合與B集合的聯集，也就是等同不要帶出"IF"
 
 4. 資料集分裂
@@ -54,7 +54,9 @@ IF A | B   匯出A集合與B集合的聯集，也就是等同不要帶出"IF"
 | **DATA** BT4cat BT4yac BT4sch; set BT3; IF TYPE = 'cat' THEN OUTPUT BT4cat; ELSE IF TYPE = 'yac' THEN OUTPUT BT4yac; ELSE IF TYPE = 'sch' THEN OUTPUT BT4sch; run; |
 
 Set 讀取來源
+
 **DATA** 烹調出多個資料集（可說是子集）
+
 If then else if 用條件決定如何分裂資料集。如果是”… THEN  OUTPUT …” ，那3個資料集都有。
 
 5. 資料集轉置
@@ -63,8 +65,10 @@ If then else if 用條件決定如何分裂資料集。如果是”… THEN  OU
 | --- |
 | **proc****transpose**data = bt3 out=bt5; var Name port Locomotion type price length; **run**; |
 
- 
 Var 要轉的行變量
+
 Id  轉置後，作為行變量的 變數名稱
+
 Class  分組轉置
+
 “transpose”與“class”非常好用。因為在proc summary階段出來的很有可能是分組資料。為了資料應用轉成矩陣格式，我曾經手動將一段一段資料用excel轉置，費了千辛萬苦，還怕出錯。現在，我可以用“transpose”+“class”，不到5行就完成了。

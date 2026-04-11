@@ -99,6 +99,40 @@ def convert_wp_shortcodes(content: str) -> str:
     return content
 
 
+BLOCK_TAGS = re.compile(
+    r"^\s*</?(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|"
+    r"figcaption|figure|footer|form|h[1-6]|header|hr|li|main|nav|noscript|ol|"
+    r"p|pre|section|table|tfoot|thead|tbody|tr|td|th|ul|video)",
+    re.IGNORECASE,
+)
+
+
+def wpautop(content: str) -> str:
+    """Simulate WordPress wpautop: convert plain-text line breaks to <p>/<br> HTML.
+
+    Only applied to blocks that don't already contain HTML block elements.
+    """
+    # Normalise line endings
+    content = content.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Split into double-newline blocks
+    blocks = re.split(r"\n{2,}", content)
+    out = []
+    for block in blocks:
+        block = block.strip()
+        if not block:
+            continue
+        # If the block already contains a block-level HTML tag, leave it alone
+        if BLOCK_TAGS.search(block) or block.startswith("<pre"):
+            out.append(block)
+        else:
+            # Convert single newlines within the block to <br>
+            block = block.replace("\n", "<br />\n")
+            out.append(f"<p>{block}</p>")
+
+    return "\n\n".join(out)
+
+
 def html_to_markdown(raw_html: str) -> str:
     """Convert HTML content to Markdown, rewriting image URLs first."""
     if not raw_html:
@@ -106,9 +140,11 @@ def html_to_markdown(raw_html: str) -> str:
     # 1. convert WordPress shortcodes BEFORE html.unescape
     #    (shortcode bodies may contain raw HTML entities like &lt;)
     content = convert_wp_shortcodes(raw_html)
-    # 2. unescape HTML entities outside of code blocks
+    # 2. apply wpautop to handle plain-text line breaks (like WordPress does)
+    content = wpautop(content)
+    # 3. unescape HTML entities outside of code blocks
     content = html.unescape(content)
-    # 3. rewrite image URLs before conversion
+    # 4. rewrite image URLs before conversion
     content = rewrite_image_urls(content)
     # convert to markdown
     result = md(
