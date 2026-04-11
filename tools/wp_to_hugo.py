@@ -44,7 +44,7 @@ def decode_slug(raw_slug: str) -> str:
 
 
 def rewrite_image_urls(html_content: str) -> str:
-    """Rewrite WordPress CDN image URLs to local /images/[year]/[filename]."""
+    """Rewrite WordPress CDN image URLs to local ../../images/[year]/[filename]."""
     pattern = re.compile(
         r'(https?://[^"\'>\s]+\.wordpress\.com/wp-content/uploads/(\d{4})/\d{2}/([^"\'>\s]+))',
         re.IGNORECASE,
@@ -53,18 +53,62 @@ def rewrite_image_urls(html_content: str) -> str:
     def replace(m):
         year = m.group(2)
         filename = m.group(3).split("?")[0]  # strip query string
-        return f"/images/{year}/{filename}"
+        return f"../../images/{year}/{filename}"
 
     return pattern.sub(replace, html_content)
+
+
+def convert_wp_shortcodes(content: str) -> str:
+    """Convert WordPress shortcodes to HTML before markdownify.
+
+    Handles:
+      [code language="xxx"]...[/code]  → <pre><code class="language-xxx">...</code></pre>
+      [code]...[/code]                 → <pre><code>...</code></pre>
+      <!--more-->                      → kept as-is (Hugo supports it natively)
+    """
+    # [code language="xxx"] or [code lang="xxx"]
+    def replace_code(m):
+        lang = m.group(1) or ""
+        lang = lang.strip().strip('"\'')
+        body = m.group(2)
+        # decode HTML entities inside code blocks
+        body = html.unescape(body)
+        # escape HTML special chars so markdownify doesn't mangle the code
+        body = body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        cls = f' class="language-{lang}"' if lang else ""
+        return f"<pre><code{cls}>{body}</code></pre>"
+
+    content = re.sub(
+        r'\[code(?:\s+(?:language|lang)=["\']?(\w+)["\']?)?\](.*?)\[/code\]',
+        replace_code,
+        content,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    # [sourcecode language="xxx"]...[/sourcecode]
+    content = re.sub(
+        r'\[sourcecode(?:\s+(?:language|lang)=["\']?(\w+)["\']?)?\](.*?)\[/sourcecode\]',
+        replace_code,
+        content,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+
+    # remove [caption]...[/caption] wrapper but keep inner content
+    content = re.sub(r'\[caption[^\]]*\](.*?)\[/caption\]', r'\1', content, flags=re.DOTALL)
+
+    return content
 
 
 def html_to_markdown(raw_html: str) -> str:
     """Convert HTML content to Markdown, rewriting image URLs first."""
     if not raw_html:
         return ""
-    # unescape HTML entities (WordPress sometimes double-encodes)
-    content = html.unescape(raw_html)
-    # rewrite image URLs before conversion
+    # 1. convert WordPress shortcodes BEFORE html.unescape
+    #    (shortcode bodies may contain raw HTML entities like &lt;)
+    content = convert_wp_shortcodes(raw_html)
+    # 2. unescape HTML entities outside of code blocks
+    content = html.unescape(content)
+    # 3. rewrite image URLs before conversion
     content = rewrite_image_urls(content)
     # convert to markdown
     result = md(
